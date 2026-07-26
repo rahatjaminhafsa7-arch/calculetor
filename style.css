@@ -1,0 +1,91 @@
+/* Google theke sundor font ana hocche */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0f172a; /* Deep aesthetic dark blue/black */
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+/* Calculator er main box er notun look */
+.calculator {
+    background: #1e293b; /* Slate dark color */
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.6), inset 0px 1px 1px rgba(255, 255, 255, 0.1);
+}
+
+/* Result screen er aesthetic design */
+#display {
+    width: 100%;
+    height: 70px;
+    background: #0f172a; /* Body er sathe match kora dark background */
+    text-align: right;
+    font-size: 32px;
+    margin-bottom: 20px;
+    border: 1px solid #334155;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    color: #38bdf8; /* Neon blue / Cyan text */
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+    box-shadow: inset 0px 4px 6px rgba(0,0,0,0.3);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+/* Normal button er dark aesthetic look */
+button {
+    padding: 18px;
+    font-size: 22px;
+    background: #334155;
+    color: #f8fafc; /* Sada text */
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Hover korle smooth transition */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Button er upor mouse nile ki hobe (Hover effect) */
+button:hover {
+    background: #475569;
+    transform: translateY(-3px); /* Halka upore uthbe */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Clear (C) button er neon red look */
+.clear {
+    background: #ef4444; 
+    color: white;
+}
+
+.clear:hover {
+    background: #dc2626;
+    box-shadow: 0 0 15px rgba(239, 68, 68, 0.6); /* Red glow */
+}
+
+/* Equal (=) button er neon green look */
+.equal {
+    background: #10b981; 
+    color: white;
+    grid-row: span 2; 
+}
+
+.equal:hover {
+    background: #059669;
+    box-shadow: 0 0 15px rgba(16, 185, 129, 0.6); /* Green glow */
+}
+
+.zero {
+    grid-column: span 2; 
+}
